@@ -6,3 +6,20 @@
     border-radius: 8px;
     width: calc(100% - 40px);
 }
+
+.card-buttons {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+}
+
+.card-buttons > button {
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    justify-self: center;
+    font-size: large;
+    padding: 10px;
+}

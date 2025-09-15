@@ -1,6 +1,13 @@
 import '../styles/ActionButtons.css'
+import CreateCounterForm from './CreateCounterForm';
 
 export default function ActionButtons(){
+
+    function renderCounter(){
+        <>
+            <CreateCounterForm />
+        </>
+    }
 
     let count = 0;
 
@@ -20,6 +27,7 @@ export default function ActionButtons(){
 
             <button 
                 style={{backgroundColor: '#1aa3ff'}}
+                onClick={renderCounter}
             > 
                 + Add New Counter
             </button>

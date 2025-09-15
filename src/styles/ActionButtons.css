@@ -1,0 +1,54 @@
+/* 
+
+<div id="actionButtons">
+
+    <div>
+        <p>Total Count: {count}</p>
+    </div>
+
+
+    <button>
+        + Add New Counter
+    </button>
+
+
+    <button>
+        Clear All Counters
+    </button>
+
+</div>
+        
+*/
+
+#actionButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+#actionButtons > div {
+    color: rgb(43, 42, 42);
+    font-size: 1.25rem;
+}
+
+#actionButtons > div > p {
+    margin: 10px;    
+}
+
+#actionButtons > button{
+    width: 60%;
+    justify-self: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,8 @@
+.card-item {
+    justify-self: center;
+    justify-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(100% - 40px);
+}

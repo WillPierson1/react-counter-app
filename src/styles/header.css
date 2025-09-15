@@ -1,0 +1,20 @@
+header {
+  width: 100%;
+  justify-items: center;
+}
+
+header > h1 {
+  /* color: rgb(2, 133, 255); */
+  color: #1aa3ff;
+  font-size: 3rem;
+  padding: 0;
+  margin: 20px;
+  font-weight: 800;
+}
+
+header > p {
+  color: rgba(46, 46, 46, 0.719);
+  margin: 0;
+  opacity: 0.7;
+  font-size: 1.35rem
+}

@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import '../styles/ActionButtons.css'
 import CreateCounterForm from './CreateCounterForm';
 
 export default function ActionButtons(){
 
+    const [formOpened, isFormOpened] = useState(false);
+
     function renderCounter(){
-        <>
-            <CreateCounterForm />
-        </>
+        isFormOpened(!formOpened);
+        console.log('Rendering. Form State: ', {formOpened})
     }
 
     let count = 0;
@@ -40,6 +42,10 @@ export default function ActionButtons(){
 
                 Clear All Counters
             </button>
+
+            {
+            formOpened &&  <CreateCounterForm />
+            }
 
         </div>
 

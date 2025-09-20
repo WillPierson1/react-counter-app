@@ -2,16 +2,17 @@ import { useState } from 'react';
 import '../styles/ActionButtons.css'
 import CreateCounterForm from './CreateCounterForm';
 
-export default function ActionButtons(){
+export default function ActionButtons({ addCounter }){
 
     const [formOpened, isFormOpened] = useState(false);
 
-    function renderCounter(){
+    function renderForm(){
         isFormOpened(!formOpened);
         console.log('Rendering. Form State: ', {formOpened})
     }
 
-    let count = 0;
+    const count = 0;
+
 
     return(
 
@@ -29,7 +30,7 @@ export default function ActionButtons(){
 
             <button 
                 style={{backgroundColor: '#1aa3ff'}}
-                onClick={renderCounter}
+                onClick={renderForm}
             > 
                 + Add New Counter
             </button>
@@ -44,7 +45,7 @@ export default function ActionButtons(){
             </button>
 
             {
-            formOpened &&  <CreateCounterForm />
+                formOpened &&  <CreateCounterForm addCounter={addCounter} /> // Passing addCounter function through from app.jsx
             }
 
         </div>

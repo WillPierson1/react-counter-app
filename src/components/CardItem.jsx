@@ -1,15 +1,16 @@
 
 import '../styles/CardItem.css';
 
-export default function CardItem(){
+export default function CardItem(e){
 
+    console.log(e)
 
     return(
-        <div className='card-item'> {/* Wrapper Div */}
+        <div className={`card-item item-${e.itemId}`} > {/* Wrapper Div */}
             {/* Title */}
-            <h1>Water Glasses</h1>
+            <h1>{e.itemName}</h1>
             {/* x amount of times clicked */}
-            <h2>0 Times</h2>
+            <h2>{e.itemCount}</h2>
             {/* rate of click (+1 per click) */}
             <p>+1 per click</p>
             {/* Card Item Action Buttons */}
